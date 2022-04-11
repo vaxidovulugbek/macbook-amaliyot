@@ -9,7 +9,7 @@
   background-color: #5d5353 !important;
 } */
 .container {
-  width: 1200px;
+  width: 90%;
   margin: 0 auto;
 }
 .content {
@@ -163,10 +163,54 @@
 .kulrang {
   background-color:#808080 ;
 }
+.mr {
+  margin-right: 10px;
+}
 
-
-
-
+@media screen and (max-width: 600px) {
+  .content {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .mac {
+    width: 100%;
+  }
+  .content__info {
+    width: 100%;
+    height: auto;
+    overflow-y: hidden ;
+    display: flex;
+    flex-direction: column;
+  }
+  .navimg {
+    width: 60px;
+  }
+  .cinfo__ramgb {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btns  {
+    width: 48%;
+  }
+  .colors-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  .colors-btn {
+    width: 48%;
+  }
+  .memory {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .mr {
+    margin-right: 0;
+  }
+  
+}
 
 
 

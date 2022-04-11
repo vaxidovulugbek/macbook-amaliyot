@@ -1,0 +1,182 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+  background-color: #5d5353 !important;
+} */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.content {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.mac {
+  width: 45%;
+}
+.carousel-inner {
+  width: 60% !important; 
+  display: flex;
+  margin-left: 120px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.mac__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.mac__item {
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.mac__item:hover {
+  border: 1px solid #000;
+}
+.navimg {
+  width: 80px;
+}
+
+
+
+
+/* START INFO PART */
+.content__info {
+  width: 50%;
+  height: 660px;
+  overflow-y: scroll ;
+}
+.cinfo__title {
+  width: 70%;
+}
+.mb {
+  margin-bottom: 20px;
+}
+.cinfo__ramname {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.infotitle {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.cinfo__ramgb {
+  display: flex;
+}
+.btns {
+  width: 150px;
+  padding: 12px 0;
+  font-size: 18px;
+  border: 1px solid #888888;
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: 600;
+}
+.colors-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.colors-btn {
+  width: 45%;
+  padding: 12px 0;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #888888;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sum {
+  display: flex;
+  margin-bottom: 18px;
+}
+.sum__btn {
+  padding: 7px 20px;
+  border: 1px solid #888888;
+  background-color: #fff;
+}
+.sum__btnnum {
+  padding: 7px 26px;
+  border: 1px solid #888888;
+  background-color: #fff;
+}
+.summa {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.btncorzinka {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #0066CC;
+  border: none;
+  margin-bottom: 18px;
+}
+.btntaqqoslash {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 8px;
+  color: #0066CC;
+  background-color: #F5F5F7;
+  border: none;
+  margin-bottom: 18px;
+}
+.color-span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  /* background-color: #0066CC; */
+  border-radius: 50%;
+}
+.gold {
+  background-color: #D29D00;
+}
+.kumush {
+  background-color: #C0C0C0;
+}
+.kulrang {
+  background-color:#808080 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

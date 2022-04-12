@@ -35,18 +35,20 @@
   margin-top: 100px;
 }
 .mac__item {
-  padding: 8px;
-  border: 1px solid transparent;
+  padding: 7px;
+  border: 2px solid transparent;
   border-radius: 8px;
   cursor: pointer;
 }
 .mac__item:hover {
-  border: 1px solid #000;
+  border: 2px solid #000;
 }
 .navimg {
   width: 80px;
 }
-
+.activdarc{
+  border: 2px solid #000;
+}
 
 
 
@@ -89,7 +91,7 @@
   width: 150px;
   padding: 12px 0;
   font-size: 18px;
-  border: 1px solid #888888;
+  border: 2px solid #88888888;
   border-radius: 10px;
   background-color: #fff;
   font-weight: 600;
@@ -104,23 +106,28 @@
   margin-bottom: 18px;
   border-radius: 10px;
   background-color: #fff;
-  border: 1px solid #888888;
+  border: 2px solid #88888888;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 12px !important;
 }
 .sum {
   display: flex;
   margin-bottom: 18px;
 }
 .sum__btn {
-  padding: 7px 20px;
+  padding: 0px 22px;
   border: 1px solid #888888;
   background-color: #fff;
+  font-size: 30px;
 }
 .sum__btnnum {
-  padding: 7px 26px;
-  border: 1px solid #888888;
+  padding: 7px 28px;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
   background-color: #fff;
 }
 .summa {
@@ -149,10 +156,11 @@
 }
 .color-span {
   display: inline-block;
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   /* background-color: #0066CC; */
   border-radius: 50%;
+  margin-bottom: 4px;
 }
 .gold {
   background-color: #D29D00;
@@ -166,6 +174,28 @@
 .mr {
   margin-right: 10px;
 }
+/* .btns:focus {
+  border: 1px solid blue;
+} */
+.activ {
+  border: 2px solid #0047e1;
+}
+.titletb {
+  display: none;
+}
+#gb1 {
+  display: none;
+}
+.dn{
+  display: none;
+}
+.displayb{
+  display: inline-block !important;
+}
+/* .titlefontsize{
+  font-size: 30px;
+} */
+
 
 @media screen and (max-width: 600px) {
   .content {
@@ -197,6 +227,7 @@
   .colors-group {
     display: flex;
     justify-content: space-between;
+    font-size: 10px;
   }
   .colors-btn {
     width: 48%;

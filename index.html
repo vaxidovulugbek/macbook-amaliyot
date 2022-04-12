@@ -15,7 +15,7 @@
       <div class="mac">
         <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div id="caruselimg1" class="carousel-item active">
               <img src="https://cdn.macbro.uz/macbro/58060f94-5167-4105-8180-92485ccac18c" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
@@ -42,35 +42,30 @@
         </div>
 
         <ul class="mac__list">
-          <li class="mac__item"><img class="navimg" src="https://cdn.macbro.uz/macbro/58060f94-5167-4105-8180-92485ccac18c" alt=""></li>
-          <li class="mac__item"><img class="navimg" src="https://cdn.macbro.uz/macbro/221e8aa7-769e-4396-b614-bba5d5a94a1e" alt=""></li>
-          <li class="mac__item"><img class="navimg" src="https://cdn.macbro.uz/macbro/dea2b7f5-72f0-4501-9a63-8a93a6d5360c" alt=""></li>
-          <li class="mac__item"><img class="navimg" src="https://cdn.macbro.uz/macbro/221e8aa7-769e-4396-b614-bba5d5a94a1e" alt=""></li>
-          <li class="mac__item"><img class="navimg" src="https://cdn.macbro.uz/macbro/0cc0093a-72c7-4a23-beb3-fe0bb4bb4ba9" alt=""></li>
+          <li id="macitem1" class="mac__item activdarc"></li>
+          <li id="macitem2" class="mac__item"></li>
+          <li id="macitem3" class="mac__item"></li>
+          <li id="macitem4" class="mac__item"></li>
+          <li id="macitem5" class="mac__item"></li>
         </ul>
-
-
-
-
-
 
       </div>
       <div class="content__info cinfo">
-        <h1 class="cinfo__title">MacBook Air 13-inch M1/<span>8</span>/<span>256 Gold</span></h1>
+        <h1 class="cinfo__title"><span id="title">MacBook Air 13-inch <span id="titlem1">M1</span></span>/<span id="titleram">8</span>/<span id="TitleMemory">256</span><span class="titletb" id="titletb"> tb</span><span id="TitleColor"> Gold</span></h1>
           <div class="cinfo__ram mb">
             <span class="cinfo__ramname infotitle">Ram</span>
             <div class="cinfo__ramgb">
-              <button class="btns mr">8Gb</button>
-              <button class="btns">16Gb</button>
+              <button id="ram8" class="btns mr activ">8Gb</button>
+              <button id="ram16" class="btns">16Gb</button>
             </div>
           </div>
 
           <div class="mb">
             <span class="infotitle">Xotira Hajmi</span>
             <div class="memory">
-              <button class="btns mr">8GB</button>
-              <button class="btns mr">16GB</button>
-              <button class="btns mt-3">1TB</button>
+              <button id="gb256" class="btns focus mr activ"><span id="memory1">256</span>GB</button>
+              <button id="gb512" class="btns focus mr"><span id="memory2">512</span>GB</button>
+              <button id="gb1" class="btns focus "><span id="memory3">1</span>TB</button>
             </div>
           </div>
 
@@ -78,21 +73,21 @@
             <span class="infotitle">Ranglar</span>
             <div>
               <div class="colors-group">
-                <button class="colors-btn mr"><span class="gold color-span"></span>TILLA RANG</button>
-                <button class="colors-btn"><span class="kumush color-span"></span>KUMUSH RANG</button>
-                <button class="colors-btn"><span class="kulrang color-span"></span>KULRANG</button>
+                <button id="colorsbtn1" class="colors-btn mr activ"><span class="gold color-span"></span>TILLA RANG</button>
+                <button id="colorsbtn2" class="colors-btn"><span class="kumush color-span"></span>KUMUSH RANG</button>
+                <button id="colorsbtn3" class="colors-btn"><span class="kulrang color-span"></span>KULRANG</button>
               </div>
             </div>
           </div>
 
           <div class="sum">
-            <button class="sum__btn">-</button>
-            <button class="sum__btnnum">1</button>
-            <button class="sum__btn">+</button>
+            <button id="btndec" class="sum__btn">-</button>
+            <button id="btnsum" class="sum__btnnum">1</button>
+            <button id="btnenc" class="sum__btn">+</button>
           </div>
           <div class="btnsumgroup">
-            <p class="summa"><span>20 438 500</span>so'm</p>
-            <del class="summa mb-5"><span>23 913 000</span>so'm</del>
+            <p class="summa"><span id="price">12497000</span>so'm</p>
+            <del class="summa mb-5"><span id="subprice">14621000</span>so'm</del>
           </div>
           <button class="btncorzinka">Savatchaga qo'shish</button>
           <button class="btntaqqoslash">Taqqoslash</button>
@@ -103,3 +98,14 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

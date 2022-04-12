@@ -1,155 +1,192 @@
 
-// let objMacgold = [
-//   {
-//     id:1,
-//     title:"MacBook Air 13-inch M1",
-//     color:[
-//       "TILLA RANG",
-//       "KUMUSH RANG",
-//       "KULRANG",
-//     ],
-//     price:{
-//       ram:[
-//         {
-//           "8":100,
-//           "16":200,
-//         },
-//       ],
-//       memory:[
-//         {
-//           "256":200,
-//           "512":400,
-//           "1":600,
-//         },
-//       ],
-//     },
-//     xotira:{
-//       ram:[
-//         {
-//           "8":8,
-//           "16":16
-//         },
-//       ],
-//       memory:[
-//         {
-//           "256":256,
-//           "512":512,
-//           "1":1,
-//         },
-//       ],
-//     },
-//     ram1:[8,16],
-//     memory:[256,512,1],
-//     colors:["TILLA RANG","KUMUSH RANG","KULRANG"],
-//     img:["../im",],
-    // ram:{
-    //   ram8:{
-    //     ram1:8,
-    //   },
-    //   ram16:{
-    //     ram1:16,
-    //   }
-    // }
-
-    // ram2:{
-    //   ram1:8,
-    //   ram2:16,
-    //   ram2:16,
-    // }
-
-    // color:{
-    //   color1:"TILLA RANG",
-    //   color2:"KUMUSH RANG",
-    //   color3:"KULRANG",
-    //   ram:{
-    //     ram1:8,
-    //     ram2:16,
-    //     ram8:{
-    //       memory:{
-    //         memory1:256,
-    //         memory2:512,
-    //       },
-    //     },
-
-    //     ram16:{
-    //       memory:{
-    //         memory1:256,
-    //         memory2:512,
-    //         memory3:1,
-    //       },
-    //     },
-    //   },
-    // },
-  // },
-  // {
-  //   ram:16,
-  //   memory1:256,
-  //   memory2:512,
-  //   memory3:1,
-  // }
-// ]
-// objMac.forEach((item) => {
-//   console.log(item.ram1.ram8);
-// })
 
 
+// console.log(obj[0].ram[1].xotira[0].activ);
+// if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[0].activ == true) {
+//   console.log("512");
+// } 
 
-
-const objec = {
-  id: 1,
-  name: 'max',
-  color: [' Gold', ' Silver', ' Gray'],
-  price: {
-      ram: [{
-          '8':150,
-          '16':300,
-      }],
-      memory: [{
-          '256': 200,
-          '512': 400,
-          '1t': 800,
-      }],
-      color: [{
-          'red':10,
-          'blue':15,
-          'yellow':20,
-      }],
-  },
-  xotira: {
-      ram: {
-          '8':8,
-          '16':16,
-          '32':32
+const obj = [
+  {
+    id: 1,
+    name: ` Gold`,
+    imgGold:{
+      img1:"https://cdn.macbro.uz/macbro/58060f94-5167-4105-8180-92485ccac18c",
+      img2:"https://cdn.macbro.uz/macbro/b8166836-a68f-4886-bf74-04d2ae1e38da",
+      img3:"https://cdn.macbro.uz/macbro/dea2b7f5-72f0-4501-9a63-8a93a6d5360c",
+      img4:"https://cdn.macbro.uz/macbro/221e8aa7-769e-4396-b614-bba5d5a94a1e",
+      img5:"https://cdn.macbro.uz/macbro/2aa0ef46-60b7-469c-8eea-11d8bf09d9f3",
+    },
+    ram: [
+   {
+    GB: 8,
+    activ:true,
+    xotira: [
+       {
+          name: `M1/8/256 Gold`,
+          gbXotira: 256,
+          price: 12497000,
+          activ:true,
+        },
+        {
+          name: `M1/8/512 Gold`,
+          gbXotira: 512,
+          price: 15066000,
+          activ:false,
+        }
+      ]
+      }, 
+    {
+    GB: 16,
+    activ:false,
+    xotira: [
+      {
+        name: `M1/16/256 Gold`,
+        gbXotira: 256,
+        price: `16935000`,
+        activ:true,
       },
-      memory: {
-          '128': 128,
-          '256': 256,
-          '512': 512,
-          '1t': 1
+      {
+        name: `M1/16/512 Gold`,
+        gbXotira: 512,
+        price: `19270500`,
+        activ:false,
       },
+      {
+        name: `M1/16/1tb Gold`,
+        gbXotira: 1,
+        price: `22497000`,
+        activ:false,
+      }
+    ]
+  }
+  ],
   },
-  imgs:{
-    img1:"https://cdn.macbro.uz/macbro/58060f94-5167-4105-8180-92485ccac18c",
-    img2:"https://cdn.macbro.uz/macbro/b8166836-a68f-4886-bf74-04d2ae1e38da",
-    img3:"https://cdn.macbro.uz/macbro/dea2b7f5-72f0-4501-9a63-8a93a6d5360c",
-    img4:"https://cdn.macbro.uz/macbro/221e8aa7-769e-4396-b614-bba5d5a94a1e",
-    img5:"https://cdn.macbro.uz/macbro/2aa0ef46-60b7-469c-8eea-11d8bf09d9f3"
+  {
+    id: 2,
+    name: ` Silver`,
+    imgUrl: "imgs/macSilver1.jpg",
+    imgSilver: {
+      img1:"https://cdn.macbro.uz/macbro/cf510327-b4e8-4378-a001-cbd8779504b8",
+      img2:"https://cdn.macbro.uz/macbro/67762a5d-aa1e-4d3c-b3cd-fda8b50b937f",
+      img3:"https://cdn.macbro.uz/macbro/51b73a16-4170-4944-80cf-6f8bca51351e",
+      img4:"https://cdn.macbro.uz/macbro/e622b5e0-65fc-4e91-a70d-9025fc30fd58",
+      img5:"https://cdn.macbro.uz/macbro/d90e01d1-2087-48a3-9462-912f58ea138c",
+    },
+    ram: [
+  {
+    GB: 8,
+    xotira: [
+      {
+        name: `M1/8/256 Silver`,
+        gbXotira: 256,
+        price: 12497000
+      },
+      {
+        name: `M1/8/512 Silver`,
+        gbXotira: 512,
+        price: 15066000
+      },
+      {
+        name: `M1/16/1tb Silver`,
+        gbXotira: 1,
+        price: `22497000`
+      }
+    ]
+  }, 
+  {
+    GB: 16,
+    xotira: [
+      {
+        name: `M1/16/256 Silver`,
+        gbXotira: 256,
+        price: `16935000`
+      },
+      {
+        name: `M1/16/512 Silver`,
+        gbXotira: 512,
+        price: `19 270 500`
+      },
+      {
+        name: `M1/16/1tb Silver`,
+        gbXotira: 1,
+        price: `22497000`
+      }
+    ]
+  }
+  ],
+  
   },
-  silver:{
-    img1:"https://cdn.macbro.uz/macbro/cf510327-b4e8-4378-a001-cbd8779504b8",
-    img2:"https://cdn.macbro.uz/macbro/67762a5d-aa1e-4d3c-b3cd-fda8b50b937f",
-    img3:"https://cdn.macbro.uz/macbro/51b73a16-4170-4944-80cf-6f8bca51351e",
-    img4:"https://cdn.macbro.uz/macbro/e622b5e0-65fc-4e91-a70d-9025fc30fd58",
-    img5:"https://cdn.macbro.uz/macbro/d90e01d1-2087-48a3-9462-912f58ea138c",
-  },
-  gray:{
+  {
+  id: 3,
+  name: ` Grey`,
+  imgUrl: "imgs/macGrey1.jpg",
+  imgGray: {
     img1:"https://cdn.macbro.uz/macbro/edb6411f-3f34-47b1-a118-36045811f045",
     img2:"https://cdn.macbro.uz/macbro/7f956a88-c90a-44b4-ba40-50aac4807181",
     img3:"https://cdn.macbro.uz/macbro/dfda6000-e242-4442-ad59-bac513806275",
     img4:"https://cdn.macbro.uz/macbro/eb6d4a3e-b892-4c4f-aff6-46d333c494ae",
-    img5:"https://cdn.macbro.uz/macbro/66715875-b08c-45a0-9f79-5f4a222e5943"
+    img5:"https://cdn.macbro.uz/macbro/66715875-b08c-45a0-9f79-5f4a222e5943",
+  },
+  ram: [
+    {
+      GB: 8,
+      xotira: [
+    {
+      name: `M1/8/256 Grey`,
+      gbXotira: 256,
+      price: 12497000
+     },
+    {
+      name: `M1/8/512 Grey`,
+      gbXotira: 512,
+      price: 15066000
+    }
+  ]
+  }, 
+  {
+    GB: 16,
+    xotira: [
+      {
+        name: `M1/16/256 Grey`,
+        gbXotira: 256,
+        price: `16935000`
+      },
+      {
+        name: `M1/16/512 Grey`,
+        gbXotira: 512,
+        price: `19270500`
+      },
+      {
+        name: `M1/16/1tb Grey`,
+        gbXotira: 1,
+        price: `22497000`
+      }
+    ]
   }
-}
+  ],
+  }
+  ];
+  
+
+  if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[0].activ == true) {
+    console.log("8talik 256");
+
+  } 
+  if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[1].activ == true) {
+    console.log(" 8talik 512");
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[0].activ == true) {
+    console.log("16gblik 256");
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[1].activ == true) {
+    console.log("16gblik 512");
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[2].activ == true) {
+    console.log("16gblik 1tb");
+  } 
+
+
 // console.log(objec.imgs.img1);
 
 
@@ -182,13 +219,13 @@ let btndec = document.querySelector("#btndec")
 let btnenc = document.querySelector("#btnenc")
 let btnsum = document.querySelector("#btnsum")
 
-console.log(elMacItem1.innerHTML);
+// console.log(elMacItem1.innerHTML);
 
-elMacItem1.innerHTML = `<img class="navimg" src="${objec.imgs.img1}" alt="">`
-elMacItem2.innerHTML = `<img class="navimg" src="${objec.imgs.img2}" alt="">`
-elMacItem3.innerHTML = `<img class="navimg" src="${objec.imgs.img3}" alt="">`
-elMacItem4.innerHTML = `<img class="navimg" src="${objec.imgs.img4}" alt="">`
-elMacItem5.innerHTML = `<img class="navimg" src="${objec.imgs.img5}" alt="">`
+elMacItem1.innerHTML = `<img class="navimg" src="${obj[0].imgGold.img1}" alt="">`
+elMacItem2.innerHTML = `<img class="navimg" src="${obj[0].imgGold.img2}" alt="">`
+elMacItem3.innerHTML = `<img class="navimg" src="${obj[0].imgGold.img3}" alt="">`
+elMacItem4.innerHTML = `<img class="navimg" src="${obj[0].imgGold.img4}" alt="">`
+elMacItem5.innerHTML = `<img class="navimg" src="${obj[0].imgGold.img5}" alt="">`
 
 
 
@@ -198,18 +235,75 @@ elRam8.addEventListener("click",(e) => {
   e.preventDefault()
   elRam16.classList.remove("activ")
   elRam8.classList.add("activ")
-  elTitleRam.textContent = objec.xotira.ram[8]
+  elTitleRam.textContent = obj[0].ram[0].GB
   elGb1.classList.remove("displayb")
-  elPrice.textContent = "12 497 000"
+  // elPrice.textContent = "12497000"
+
+  obj[0].ram[0].activ = true 
+  obj[0].ram[1].activ = false
+  // obj[0].ram[0].xotira[0].activ == true
+  // obj[0].ram[1].xotira[0].activ == true
+
+  if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[0].activ == true) {
+    console.log("8talik 256");
+    elPrice.textContent = `${obj[0].ram[0].xotira[0].price}`
+  } 
+  if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[1].activ == true) {
+    console.log("8talik 512");
+    elPrice.textContent = `${obj[0].ram[0].xotira[1].price}`
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[0].activ == true && obj[0].ram[0].xotira[0].activ == true) {
+    console.log("16gblik 256");
+    elPrice.textContent = `${obj[0].ram[1].xotira[0].price}`
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[1].activ == true && obj[0].ram[0].xotira[1].activ == true) {
+    console.log("16gblik 512");
+    elPrice.textContent = `${obj[0].ram[1].xotira[1].price}`
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[2].activ == true) {
+    console.log("16gblik 1tb");
+    elPrice.textContent = `${obj[0].ram[1].xotira[2].price}`
+  } 
+  
 })
 elRam16.addEventListener("click",(e) => {
   e.preventDefault()
   elRam8.classList.remove("activ")
   elRam16.classList.add("activ")
-  elTitleRam.textContent = objec.xotira.ram[16]
+  elTitleRam.textContent = obj[0].ram[1].GB
   elGb1.classList.add("displayb")
   elRam8.classList.remove("dn")
-  elPrice.textContent = "16 935 000"
+  // elPrice.textContent = "16935000"
+
+  obj[0].ram[0].activ = false 
+  obj[0].ram[1].activ = true
+  // obj[0].ram[0].xotira[0].activ == true
+  // obj[0].ram[1].xotira[0].activ == true
+
+  if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[0].activ == true) {
+    console.log("8talik 256");
+    elPrice.textContent = `${obj[0].ram[0].xotira[0].price}`
+    // elPrice.textContent = `${obj[0].ram[0].xotira[0].price}`
+    // elPrice.textContent = "salom"
+  } 
+  if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[1].activ == true) {
+    console.log("8talik 512");
+    elPrice.textContent = `${obj[0].ram[0].xotira[1].price}`
+    // elPrice.textContent = "salom"
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[0].activ == true && obj[0].ram[0].xotira[0].activ == true) {
+    console.log("16gblik 256");
+    elPrice.textContent = `${obj[0].ram[1].xotira[0].price}`
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[1].activ == true && obj[0].ram[0].xotira[1].activ == true) {
+    console.log("16gblik 512");
+    elPrice.textContent = `${obj[0].ram[1].xotira[1].price}`
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[2].activ == true) {
+    console.log("16gblik 1tb");
+    elPrice.textContent = `${obj[0].ram[1].xotira[2].price}`
+    
+  } 
 })
 
 // START MEMORY PART
@@ -219,31 +313,95 @@ elGb256.addEventListener("click",(e) => {
   elGb512.classList.remove("activ")
   elGb1.classList.remove("activ")
   elGb256.classList.add("activ")
-  elTitleMemory.textContent = objec.xotira.memory[256]
+  elTitleMemory.textContent = obj[0].ram[0].xotira[0].gbXotira
   elTitleTB.classList.remove("displayb")
-  elTitleRam.classList.remove("titlefontsize")
+  elTitleMemory.classList.remove("titlefontsize")
   elTitleM1.classList.remove("titlefontsize")
   elTitleMemory.classList.remove("titlefontsize")
   elRam8.classList.remove("dn")
+
+  obj[0].ram[0].xotira[0].activ = true
+  obj[0].ram[0].xotira[1].activ = false
+  obj[0].ram[1].xotira[0].activ = true
+  obj[0].ram[1].xotira[1].activ = false
+  obj[0].ram[1].xotira[2].activ = false
+
+  
+  if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[0].activ == true) {
+    console.log("8talik 256");
+    elPrice.textContent = `${obj[0].ram[0].xotira[0].price}`
+  } 
+  if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[1].activ == true) {
+    console.log(" 8talik 512");
+    elPrice.textContent = `${obj[0].ram[0].xotira[1].price}`
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[0].activ == true && obj[0].ram[0].xotira[0].activ == true) {
+    console.log("16gblik 256");
+    elPrice.textContent = `${obj[0].ram[1].xotira[0].price}`
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[1].activ == true && obj[0].ram[0].xotira[1].activ == true) {
+    console.log("16gblik 512");
+    elPrice.textContent = `${obj[0].ram[1].xotira[1].price}`
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[2].activ == true) {
+    console.log("16gblik 1tb");
+    elPrice.textContent = `${obj[0].ram[1].xotira[2].price}`
+  } 
+  
+  
+  // console.log(obj);
+
 })
 elGb512.addEventListener("click",(e) => {
   e.preventDefault()
   elGb256.classList.remove("activ")
   elGb1.classList.remove("activ")
   elGb512.classList.add("activ")
-  elTitleMemory.textContent = objec.xotira.memory[512]
+  elTitleMemory.textContent = obj[0].ram[0].xotira[1].gbXotira
   elTitleTB.classList.remove("displayb")
   elTitleRam.classList.remove("titlefontsize")
   elTitleM1.classList.remove("titlefontsize")
   elTitleMemory.classList.remove("titlefontsize")
   elRam8.classList.remove("dn")
+
+  obj[0].ram[0].xotira[0].activ = false 
+  obj[0].ram[0].xotira[1].activ = true
+  obj[0].ram[1].xotira[0].activ = false
+  obj[0].ram[1].xotira[1].activ = true
+  obj[0].ram[1].xotira[2].activ = false
+
+
+  if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[0].activ == true) {
+    console.log("8talik 256");
+    elPrice.textContent = `${obj[0].ram[0].xotira[0].price}`
+  } 
+  if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[1].activ == true) {
+    console.log(" 8talik 512");
+    elPrice.textContent = `${obj[0].ram[0].xotira[1].price}`
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[0].activ == true && obj[0].ram[0].xotira[0].activ == true) {
+    console.log("16gblik 256");
+    elPrice.textContent = `${obj[0].ram[1].xotira[0].price}`
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[1].activ == true && obj[0].ram[0].xotira[1].activ == true) {
+    console.log("16gblik 512");
+    elPrice.textContent = `${obj[0].ram[1].xotira[1].price}`
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[2].activ == true) {
+    console.log("16gblik 1tb");
+    elPrice.textContent = `${obj[0].ram[1].xotira[2].price}`
+  } 
+  
+
+  // console.log(obj);
+
 })
 elGb1.addEventListener("click",(e) => {
   e.preventDefault()
   elGb512.classList.remove("activ")
   elGb256.classList.remove("activ")
   elGb1.classList.add("activ")
-  elTitleMemory.textContent = objec.xotira.memory["1t"]
+  elTitleMemory.textContent = obj[0].ram[1].xotira[2].gbXotira
   elTitleTB.classList.add("displayb")
   elTitleTB.classList.add("titlefontsize")
   elTitleRam.classList.add("titlefontsize")
@@ -251,6 +409,35 @@ elGb1.addEventListener("click",(e) => {
   elTitleMemory.classList.add("titlefontsize")
   elTitleColor.classList.add("titlefontsize")
   elRam8.classList.add("dn")
+
+  obj[0].ram[0].xotira[0].activ = false 
+  obj[0].ram[0].xotira[1].activ = false
+  obj[0].ram[1].xotira[0].activ = false
+  obj[0].ram[1].xotira[1].activ = false
+  obj[0].ram[1].xotira[2].activ = true
+
+
+  if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[0].activ == true) {
+    console.log("8talik 256");
+    elPrice.textContent = `${obj[0].ram[0].xotira[0].price}`
+  } 
+  if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[1].activ == true) {
+    console.log("8talik 512");
+    elPrice.textContent = `${obj[0].ram[0].xotira[1].price}`
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[0].activ == true && obj[0].ram[0].xotira[0].activ == true) {
+    console.log("16gblik 256");
+    elPrice.textContent = `${obj[0].ram[1].xotira[0].price}`
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[1].activ == true && obj[0].ram[0].xotira[1].activ == true) {
+    console.log("16gblik 512");
+    elPrice.textContent = `${obj[0].ram[1].xotira[1].price}`
+  } 
+  if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[2].activ == true) {
+    console.log("16gblik 1tb");
+    elPrice.textContent = `${obj[0].ram[1].xotira[2].price}`
+  } 
+ 
 })
 
 // START COLORS PART
@@ -260,15 +447,15 @@ elColorsbtn1.addEventListener("click",(e) => {
   elColorsbtn3.classList.remove("activ")
   elColorsbtn2.classList.remove("activ")
   elColorsbtn1.classList.add("activ")
-  elTitleColor.textContent = objec.color[0]
+  elTitleColor.textContent = obj[0].name
 
-  caruselimg1.innerHTML = `<img src="${objec.imgs.img1}" class="d-block w-100" alt="...">`
+  caruselimg1.innerHTML = `<img src="${obj[0].imgGold.img1}" class="d-block w-100" alt="...">`
   
-  elMacItem1.innerHTML = `<img class="navimg" src="${objec.imgs.img1}" alt="">`
-  elMacItem2.innerHTML = `<img class="navimg" src="${objec.imgs.img2}" alt="">`
-  elMacItem3.innerHTML = `<img class="navimg" src="${objec.imgs.img3}" alt="">`
-  elMacItem4.innerHTML = `<img class="navimg" src="${objec.imgs.img4}" alt="">`
-  elMacItem5.innerHTML = `<img class="navimg" src="${objec.imgs.img5}" alt="">`
+  elMacItem1.innerHTML = `<img class="navimg" src="${obj[0].imgGold.img1}" alt="">`
+  elMacItem2.innerHTML = `<img class="navimg" src="${obj[0].imgGold.img2}" alt="">`
+  elMacItem3.innerHTML = `<img class="navimg" src="${obj[0].imgGold.img3}" alt="">`
+  elMacItem4.innerHTML = `<img class="navimg" src="${obj[0].imgGold.img4}" alt="">`
+  elMacItem5.innerHTML = `<img class="navimg" src="${obj[0].imgGold.img5}" alt="">`
 
 })
 elColorsbtn2.addEventListener("click",(e) => {
@@ -276,30 +463,30 @@ elColorsbtn2.addEventListener("click",(e) => {
   elColorsbtn3.classList.remove("activ")
   elColorsbtn1.classList.remove("activ")
   elColorsbtn2.classList.add("activ")
-  elTitleColor.textContent = objec.color[1]
+  elTitleColor.textContent = obj[1].name
 
-  caruselimg1.innerHTML = `<img src="${objec.silver.img1}" class="d-block w-100" alt="...">`
+  caruselimg1.innerHTML = `<img src="${obj[1].imgSilver.img1}" class="d-block w-100" alt="...">`
 
-  elMacItem1.innerHTML = `<img class="navimg" src="${objec.silver.img1}" alt="">`
-  elMacItem2.innerHTML = `<img class="navimg" src="${objec.silver.img2}" alt="">`
-  elMacItem3.innerHTML = `<img class="navimg" src="${objec.silver.img3}" alt="">`
-  elMacItem4.innerHTML = `<img class="navimg" src="${objec.silver.img4}" alt="">`
-  elMacItem5.innerHTML = `<img class="navimg" src="${objec.silver.img5}" alt="">`
+  elMacItem1.innerHTML = `<img class="navimg" src="${obj[1].imgSilver.img1}" alt="">`
+  elMacItem2.innerHTML = `<img class="navimg" src="${obj[1].imgSilver.img2}" alt="">`
+  elMacItem3.innerHTML = `<img class="navimg" src="${obj[1].imgSilver.img3}" alt="">`
+  elMacItem4.innerHTML = `<img class="navimg" src="${obj[1].imgSilver.img4}" alt="">`
+  elMacItem5.innerHTML = `<img class="navimg" src="${obj[1].imgSilver.img5}" alt="">`
 })
 elColorsbtn3.addEventListener("click",(e) => {
   e.preventDefault()
   elColorsbtn2.classList.remove("activ")
   elColorsbtn1.classList.remove("activ")
   elColorsbtn3.classList.add("activ")
-  elTitleColor.textContent = objec.color[2]
+  elTitleColor.textContent = obj[2].name
 
-  caruselimg1.innerHTML = `<img src="${objec.gray.img1}" class="d-block w-100" alt="...">`
+  caruselimg1.innerHTML = `<img src="${obj[2].imgGray.img1}" class="d-block w-100" alt="...">`
 
-  elMacItem1.innerHTML = `<img class="navimg" src="${objec.gray.img1}" alt="">`
-  elMacItem2.innerHTML = `<img class="navimg" src="${objec.gray.img2}" alt="">`
-  elMacItem3.innerHTML = `<img class="navimg" src="${objec.gray.img3}" alt="">`
-  elMacItem4.innerHTML = `<img class="navimg" src="${objec.gray.img4}" alt="">`
-  elMacItem5.innerHTML = `<img class="navimg" src="${objec.gray.img5}" alt="">`
+  elMacItem1.innerHTML = `<img class="navimg" src="${obj[2].imgGray.img1}" alt="">`
+  elMacItem2.innerHTML = `<img class="navimg" src="${obj[2].imgGray.img2}" alt="">`
+  elMacItem3.innerHTML = `<img class="navimg" src="${obj[2].imgGray.img3}" alt="">`
+  elMacItem4.innerHTML = `<img class="navimg" src="${obj[2].imgGray.img4}" alt="">`
+  elMacItem5.innerHTML = `<img class="navimg" src="${obj[2].imgGray.img5}" alt="">`
 })
 
 // START MAC IMG PART
@@ -350,22 +537,72 @@ elMacItem5.addEventListener("click",(e) => {
 btnenc.addEventListener("click",(e) => {
   e.preventDefault()
   btnsum.textContent++
-  let a = eval(elPrice.textContent) + eval(elPrice.textContent)
-  elPrice.textContent = a
-  let b = eval(elSubprice.textContent) + eval(elSubprice.textContent)
-  elSubprice.textContent = b
-  // console.log(elPrice.textContent + elPrice.textContent);
-  // console.log(eval(elPrice.textContent));
+  // let a = eval(elPrice.textContent) + eval(elPrice.textContent)
+  // elPrice.textContent = a
+  // let b = eval(elSubprice.textContent) + eval(elSubprice.textContent)
+  // elSubprice.textContent = b
 })
 btndec.addEventListener("click",(e) => {
-  e.preventDefault()
-  btnsum.textContent--
-  let c = eval(elPrice.textContent) - eval(elPrice.textContent)
-  elPrice.textContent = c
-  let d = eval(elSubprice.textContent) - eval(elSubprice.textContent)
-  elSubprice.textContent = d
+  if(btnsum.textContent > 1){
+    e.preventDefault()
+    btnsum.textContent--
+  }
+
+  // let c = eval(elPrice.textContent) - eval(elPrice.textContent)
+  // elPrice.textContent = c
+  // let d = eval(elSubprice.textContent) - eval(elSubprice.textContent)
+  // elSubprice.textContent = d
   // btnsum.textContent = Math.min(1)
 })
+
+ 
+// let res = elRam8.classList.some("activ")
+// console.log(res);
+// let res = elRam8.classList.some(item => {
+//   return item = "activ"
+// })
+// console.log(res);
+
+// PRICE PART
+// function ramprice () {
+//   // if (elRam8.classList.includes("activ")) {
+//   //   console.log("acrtiv bor");
+//   // }
+  // let res = elRam8.classList.includes("activ")
+  // console.log(res);
+  // if (8>4) {
+  //   console.log("acrtiv bor");
+  // }
+// }
+// ramprice()
+
+
+
+// if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[0].activ == true) {
+//   console.log("8talik 256");
+// } 
+// if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[1].activ == true) {
+//   console.log(" 8talik 512");
+// } 
+// if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[0].activ == true) {
+//   console.log("16gblik 256");
+// } 
+// if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[1].activ == true) {
+//   console.log("16gblik 512");
+// } 
+// if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[2].activ == true) {
+//   console.log("16gblik 1tb");
+// } 
+
+
+
+
+
+
+
+
+
+
 
 
 

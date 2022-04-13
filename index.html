@@ -6,41 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>amaliyot macbook</title>
   <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
   
+  <div id="modalinner" class="modalinner dn">
+    <div  class="carusel-mcontent">
+      <div id="caruselmodal" class="caruselmodal">
+        <div id="karuselm1" class="caruselmodalbox"></div>
+        <div id="karuselm2" class="caruselmodalbox"></div>
+        <div id="karuselm3" class="caruselmodalbox"></div>
+        <div id="karuselm4" class="caruselmodalbox"></div>
+        <div id="karuselm5" class="caruselmodalbox"></div>
+      </div>
+    </div>
+    <button id="modalbtn2"><i class='bx bx-fullscreen'></i></button>
+      <ul class="modallist">
+        <li id="macmodal1" class="modalmac-item activmodaldarc"></li>
+        <li id="macmodal2" class="modalmac-item"></li>
+        <li id="macmodal3" class="modalmac-item"></li>
+        <li id="macmodal4" class="modalmac-item"></li>
+        <li id="macmodal5" class="modalmac-item"></li>
+      </ul>
+    </div>
   <div class="container">
-    <div class="content">
-      <div class="mac">
-        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-          <div class="carousel-inner">
-            <div id="caruselimg1" class="carousel-item active">
-              <img src="https://cdn.macbro.uz/macbro/58060f94-5167-4105-8180-92485ccac18c" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="https://cdn.macbro.uz/macbro/221e8aa7-769e-4396-b614-bba5d5a94a1e" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="https://cdn.macbro.uz/macbro/dea2b7f5-72f0-4501-9a63-8a93a6d5360c" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="https://cdn.macbro.uz/macbro/221e8aa7-769e-4396-b614-bba5d5a94a1e" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="https://cdn.macbro.uz/macbro/0cc0093a-72c7-4a23-beb3-fe0bb4bb4ba9" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+    <div id="content" class="content">
 
+    <div class="mac">
+      <div class="slider-content">
+        <div id="sliderin" class="slider-inner">
+          <div id="slider1" class="sliderbox"></div>
+          <div id="slider2" class="sliderbox"></div>
+          <div id="slider3" class="sliderbox"></div>
+          <div id="slider4" class="sliderbox"></div>
+          <div id="slider5" class="sliderbox"></div>
+        </div>
+      </div>
+
+      <button id="modalbtn"><i class='bx bx-fullscreen'></i></button>
         <ul class="mac__list">
           <li id="macitem1" class="mac__item activdarc"></li>
           <li id="macitem2" class="mac__item"></li>
@@ -87,14 +91,13 @@
           </div>
           <div class="btnsumgroup">
             <p class="summa"><span id="price">12497000</span>so'm</p>
-            <del class="summa mb-5"><span id="subprice">14621000</span>so'm</del>
+            <del class="subsumma mb-4"><span id="subprice">14621000</span>so'm</del>
           </div>
           <button class="btncorzinka">Savatchaga qo'shish</button>
           <button class="btntaqqoslash">Taqqoslash</button>
       </div>
-    </div>
+    </div> 
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

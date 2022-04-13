@@ -19,6 +19,7 @@
 }
 .mac {
   width: 45%;
+  position: relative;
 }
 .carousel-inner {
   width: 60% !important; 
@@ -32,13 +33,14 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 .mac__item {
   padding: 7px;
   border: 2px solid transparent;
   border-radius: 8px;
   cursor: pointer;
+  transition: 0.4s ease;
 }
 .mac__item:hover {
   border: 2px solid #000;
@@ -55,7 +57,7 @@
 /* START INFO PART */
 .content__info {
   width: 50%;
-  height: 660px;
+  height: 700px;
   overflow-y: scroll ;
 }
 .content__info::-webkit-scrollbar{
@@ -133,6 +135,12 @@
 .summa {
   font-size: 34px;
   font-weight: 600;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.subsumma {
+  font-size: 28px;
+  font-weight: 400;
   margin-bottom: 10px;
   display: inline-block;
 }
@@ -174,9 +182,6 @@
 .mr {
   margin-right: 10px;
 }
-/* .btns:focus {
-  border: 1px solid blue;
-} */
 .activ {
   border: 2px solid #0047e1;
 }
@@ -192,9 +197,110 @@
 .displayb{
   display: inline-block !important;
 }
-/* .titlefontsize{
-  font-size: 30px;
-} */
+.db{
+  display: block !important;
+}
+
+.slider-content{
+  width: 100%;
+  overflow-x: hidden;
+}
+.slider-inner {
+  display: flex;
+  align-items: center;
+  height: 450px;
+  transition: all 0.5s ease;
+}
+.slider-picture {
+  width: 450px;
+  height: 450px;
+  /* border: 2px solid red; */
+  margin-left: 90px;
+}
+#modalbtn {
+  position: absolute;
+  right: 0;
+  bottom: 220px;
+  border: none;
+  background-color: transparent;
+  font-size: 32px;
+  color: #a3a3a3;
+  box-shadow: 4px 4px 50px -10px rgba(34, 60, 80, 0.2);
+  transition: all 0.2s ease;
+}
+#modalbtn2 {
+  position: absolute;
+  right: 40px;
+  bottom: 200px;
+  border: none;
+  background-color: transparent;
+  font-size: 32px;
+  color: #a3a3a3;
+  box-shadow: 4px 4px 50px -10px rgba(34, 60, 80, 0.2);
+  transition: all 0.2s ease;
+}
+#modalbtn:hover{
+  color: #02376c;
+}
+#modalbtn2:hover{
+  color: #02376c;
+}
+
+
+/* START BIG MODAL PART */
+.modalinner {
+  width: 100%;
+  margin-bottom: 20px;
+  /* border: 2px solid blue; */
+}
+.carusel-mcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: 2px solid red; */
+  overflow: hidden;
+  margin: 0 auto;
+}
+.caruselmodal {
+  display: flex;
+  align-items: center;
+  width:550px;
+  /* border: 10px solid green; */
+  margin: 50px 0px 20px 0px;
+  transition: all 0.4s ease;
+}
+.caruselmodalbox {
+  margin-right: 600px;
+}
+.modallist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+}
+.modalbigcarusel {
+  width: 550px;
+  height: 500px;
+}
+.modalinnercarusel {
+  width: 100px;
+  height: 100px;
+}
+.modalmac-item{
+  padding: 5px;
+  border: 2px solid transparent;
+  margin-right: 5px;
+}
+.modalmac-item:hover {
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+.activmodaldarc {
+  border: 2px solid #000;
+  border-radius: 10px;
+}
 
 
 @media screen and (max-width: 600px) {

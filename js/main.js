@@ -816,7 +816,7 @@ btnenc.addEventListener("click",(e) => {
   e.preventDefault()
   btnsum.textContent++
   elPrice.textContent = eval(elPrice.textContent) + aa
-  // elSubprice.textContent = eval(elSubprice.textContent) + cc
+  elSubprice.textContent = eval(elSubprice.textContent) + cc
 })
 
 btndec.addEventListener("click",(e) => {
@@ -824,7 +824,7 @@ btndec.addEventListener("click",(e) => {
     e.preventDefault()
     btnsum.textContent--
     elPrice.textContent = eval(elPrice.textContent) - aa
-    // elSubprice.textContent = eval(elSubprice.textContent) - cc
+    elSubprice.textContent = eval(elSubprice.textContent) - cc
   }
 })
 

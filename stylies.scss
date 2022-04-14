@@ -1,0 +1,131 @@
+$breakpoint: 980px;
+
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 100%;
+    max-width: 1100px;
+    margin: 24px auto;
+    overflow: hidden;
+
+    &.slider--last .slider__arrow-next,
+    &.slider--first .slider__arrow-prev {
+        display: none;
+    }
+}
+
+.slider__wrapper {
+    position: relative;
+}
+
+.slider__inner {
+    display: flex;
+    overflow-x: scroll;
+    flex-flow: row nowrap;
+    margin-bottom: 24px;
+    gap: 24px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+
+    &::-webkit-scrollbar {
+        height: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 24px;
+        background-color: lightgrey;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+}
+.slider__inner::-webkit-scrollbar{
+    width: 0; 
+    height: 0;
+  }
+.slider__arrow {
+    padding:  10px;
+    border: none;
+    background-color: #ECECEC;
+    color: #8A8A8A;
+    border-radius: 50%;
+}
+.slider__slide {
+    flex: 1 0 33%;
+    max-width: 33%;
+    height: 350px;
+    scroll-snap-align: center;
+}
+
+.slide__content {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-between;
+    // height: auto;
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 56%;
+    }
+}
+
+.slider__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__dots {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 12px;
+
+    @media (min-width: $breakpoint) {
+        display: none;
+    }
+}
+
+.slider__arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    display: block;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.slider__arrow-prev {
+    left: 0;
+}
+
+.slider__arrow-next {
+    right: 0;
+}
+
+
+
+
+
+
+

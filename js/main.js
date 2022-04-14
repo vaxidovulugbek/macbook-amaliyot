@@ -266,6 +266,8 @@ let elMacmodal4 = document.querySelector("#macmodal4")
 let elMacmodal5 = document.querySelector("#macmodal5")
 let elModalmacItem = document.querySelectorAll(".modalmac-item")
 let elCaruselModal = document.querySelector("#caruselmodal")
+let elMain = document.querySelector("#main")
+let elFooter = document.querySelector("#footer")
 elMacmodal1.addEventListener("click" ,(e) =>{
   e.preventDefault()
   elMacmodal1.classList.add("activmodaldarc")
@@ -311,11 +313,15 @@ elModalBtn.addEventListener("click" ,(e) => {
   e.preventDefault()
   elContent.classList.add("dn")
   elModalInner.classList.remove("dn")
+  elMain.classList.add("dn")
+  elFooter.classList.add("dn")
 })
 elModalBtn2.addEventListener("click" ,(e) => {
   e.preventDefault()
   elContent.classList.remove("dn")
   elModalInner.classList.add("dn")
+  elMain.classList.remove("dn")
+  elFooter.classList.remove("dn")
 })
 
 elMacmodal1.innerHTML = `<img class="modalinnercarusel" src="${obj[0].imgGold.img1}" alt="">`
@@ -379,6 +385,7 @@ elRam8.addEventListener("click",(e) => {
     console.log("8talik 256");
     elPrice.textContent = `${obj[0].ram[0].xotira[0].price}`
     elSubprice.textContent = `${obj[0].ram[0].xotira[0].subprice}`
+    
   } 
   if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[1].activ == true) {
     console.log("8talik 512");
@@ -796,24 +803,46 @@ elMacItem5.addEventListener("click",(e) => {
   elMacItem4.classList.remove("activdarc")
   elMacItem1.classList.remove("activdarc")
 })
+// console.log(obj[0].ram[0].xotira[0].price);
+// console.log(obj[0].ram[1].xotira[0].price);
+// console.log(obj[0].ram[1].xotira[2].price);
+
+
 
 let aa = eval(elPrice.textContent)
 let cc = eval(elSubprice.textContent)
+
 btnenc.addEventListener("click",(e) => {
   e.preventDefault()
   btnsum.textContent++
   elPrice.textContent = eval(elPrice.textContent) + aa
-  elSubprice.textContent = eval(elSubprice.textContent) + cc
+  // elSubprice.textContent = eval(elSubprice.textContent) + cc
 })
+
 btndec.addEventListener("click",(e) => {
   if(btnsum.textContent > 1){
     e.preventDefault()
     btnsum.textContent--
     elPrice.textContent = eval(elPrice.textContent) - aa
-    elSubprice.textContent = eval(elSubprice.textContent) - cc
+    // elSubprice.textContent = eval(elSubprice.textContent) - cc
   }
-  // btnsum.textContent = Math.min(1)
 })
+
+
+
+
+
+// let g = 10
+// let v = 20
+// function sn (g,v) {
+//   let f =  g 
+//   let c = v
+//   f = 32
+//   c = 78
+//   let massives = [f,c]
+//   return(massives)
+// }
+// console.log(sn(g,v));
 
 
 
@@ -841,7 +870,67 @@ btndec.addEventListener("click",(e) => {
 
 
 
+// boya yasagan holatim count
 
-
+// if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[0].activ == true) {
+//   //   console.log("8talik 256");
+  
+//   btnenc.addEventListener("click",(e) => {
+//     e.preventDefault()
+//     btnsum.textContent++
+//     aa = obj[0].ram[0].xotira[0].price
+//     cc = obj[0].ram[0].xotira[0].subprice
+//     elPrice.textContent = eval(elPrice.textContent) + aa
+//     elSubprice.textContent = eval(elSubprice.textContent) + cc
+//   })
+// } 
+// if (obj[0].ram[0].activ == true && obj[0].ram[0].xotira[1].activ == true) {
+//   // console.log("8talik 512");
+  
+//   btnenc.addEventListener("click",(e) => {
+//     e.preventDefault()
+//     btnsum.textContent++
+//     aa = obj[0].ram[0].xotira[1].price
+//     cc = obj[0].ram[0].xotira[1].subprice
+//     elPrice.textContent = eval(elPrice.textContent) + aa
+//     elSubprice.textContent = eval(elSubprice.textContent) + cc
+//   })
+// } 
+// if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[0].activ == true && obj[0].ram[0].xotira[0].activ == true) {
+//   // console.log("16gblik 256");
+  
+//   btnenc.addEventListener("click",(e) => {
+//     e.preventDefault()
+//     btnsum.textContent++
+//     aa = obj[0].ram[1].xotira[0].price
+//     cc = obj[0].ram[1].xotira[0].subprice
+//     elPrice.textContent = eval(elPrice.textContent) + aa
+//     elSubprice.textContent = eval(elSubprice.textContent) + cc
+//   })
+// } 
+// if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[1].activ == true && obj[0].ram[0].xotira[1].activ == true) {
+//   // console.log("16gblik 512");
+  
+//   btnenc.addEventListener("click",(e) => {
+//     e.preventDefault()
+//     btnsum.textContent++
+//     aa = obj[0].ram[1].xotira[1].price
+//     cc = obj[0].ram[1].xotira[1].subprice
+//     elPrice.textContent = eval(elPrice.textContent) + aa
+//     elSubprice.textContent = eval(elSubprice.textContent) + cc
+//   })
+// } 
+// if (obj[0].ram[1].activ == true && obj[0].ram[1].xotira[2].activ == true) {
+//   // console.log("16gblik 1tb");
+  
+//   btnenc.addEventListener("click",(e) => {
+//     e.preventDefault()
+//     btnsum.textContent++
+//     aa = obj[0].ram[1].xotira[2].price
+//     cc = obj[0].ram[1].xotira[2].subprice
+//     elPrice.textContent = eval(elPrice.textContent) + aa
+//     elSubprice.textContent = eval(elSubprice.textContent) + cc
+//   })
+// } 
 
 
